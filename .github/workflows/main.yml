@@ -12,15 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-#      - name: Install and Build
-#        run: |
-#          yarn install
-#          yarn run build
-          
       - name: Install and Build
         run: |
           yarn install
-          yarn run build --base=/vite-project/
+          yarn run build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
