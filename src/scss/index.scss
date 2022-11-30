@@ -13,6 +13,7 @@ $color4:#0025f1;
 }
 
 #player {
+  max-width: 500px;
   height: 100vh;
   background: $backgroundColor;
   .header {
